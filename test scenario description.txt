@@ -1,0 +1,125 @@
+First, set guest list capacity. (guest list capacity = 3)
+
+Display list of available commands. (help)
+
+Enter values for 5 people. (add)
+
+The following information is displayed:
+- Guest List (guests): 3 people are on the guest list.
+- Waiting List (waitlist): 2 people are on the waiting list.
+- Number of People on the Guest List (guests_no): There are 3 people on the guest list.
+- Number of People on the Waiting List (waitlist_no): There are 2 people on the waiting list.
+- Total Number of Registered People (subscribe_no): There are 5 people registered in total.
+- Number of Available Seats (available): There are 0 seats available.
+
+Attempting to register a person ("CioPEC AlinA-MIHaela") who already exists in the list, considering case-insensitive matching for first and last names.
+
+Field validation tested with invalid inputs:
+- invalid last name ("ciopec"): First comes the field validation.
+- invalid first name ("Mihai$%^").
+- invalid email ("mihaimarian789gmail.com").
+- invalid phone number ("078@#$").
+
+Again it is displayed:
+- Guest List (guests): 3 people are on the guest list.
+- Waiting List (waitlist): 2 people are on the waiting list.
+- Number of People on the Guest List (guests_no): There are 3 people on the guest list.
+- Number of People on the Waiting List (waitlist_no): There are 2 people on the waiting list.
+- Total Number of Registered People (subscribe_no): There are 5 people registered in total.
+- Number of Available Seats (available): There are 0 seats available.
+
+Invalid records were not included in the system.
+
+Partial searches disregard case sensitivity:
+- "CIOPEC" yields 2 results: Ciopec Alina-Mihaela and Ciopec Mariana.
+- "lo" yields 2 results: Mihai Lorena and Mihai Alex (email: mihai_alex7865@outlook.com).
+- "97" returns 5 results involving email and/or phone number.
+
+Searching (check) according to:
+- name and surname (option 1)
+- email (option 2)
+- telephone (option 3)
+
+Searching (check) for non-existent records can be done based on:
+- name and surname (option 1)
+- email (option 2)
+- telephone (option 3)
+
+Searching (check) for invalid options can be performed using an out-of-range value.
+(check option = 15)
+
+Updating based on a search (check).
+After, the updated information is confirmed by performing another search (check) using the new values.
+
+Searching by first and last name (option check 1), update:
+- name (update option 1)
+- first name (update option 2)
+- email (update option 3)
+- phone (update option 4)
+
+Searching by email (option check 2), update:
+- name (update option 1)
+- first name (update option 2)
+- email (update option 3)
+- phone (update option 4)
+
+Searching by phone (option check 3), update:
+- name (update option 1)
+- first name (update option 2)
+- email (update option 3)
+- phone (update option 4)
+
+Example:
+For the name "Ciopec Alina-Mihaela", the name field is updated with the new value "Popescu".
+update
+1
+chip
+alina-Mihaela
+1
+Popescu
+
+A search is conducted using the updated values for the first and last name, which are "Popescu" and "Alina-Mihaela" respectively.
+check
+1
+Popescu
+alina-Mihaela
+
+Updating (update) with an:
+- invalid check option (check option = 100)
+- invalid update option (update option = 356)
+
+Again it is displayed:
+- Guest List (guests): 3 people are on the guest list.
+- Waiting List (waitlist): 2 people are on the waiting list.
+- Number of People on the Guest List (guests_no): There are 3 people on the guest list.
+- Number of People on the Waiting List (waitlist_no): There are 2 people on the waiting list.
+- Total Number of Registered People (subscribe_no): There are 5 people registered in total.
+- Number of Available Seats (available): There are 0 seats available.
+It can be seen that the records have been updated according to the update.
+
+Deletion (remove) is performed based on the following options:
+- name and surname (option 1)
+- email (option 2)
+- telephone (option 3)
+
+Attempting to delete (remove) with an invalid option value. (option = 3456)
+
+Deleting (remove) non-existent records based on:
+- name and surname (option 1)
+- email (option 2)
+- telephone (option 3)
+
+Again it is displayed:
+- Guest List (guests): 2 people are on the guest list.
+- Waiting List (waitlist): 0 people are on the waiting list.
+- Number of People on the Guest List (guests_no): There are 2 people on the guest list.
+- Number of People on the Waiting List (waitlist_no): There are 0 people on the waiting list.
+- Total Number of Registered People (subscribe_no): There are 2 people registered in total.
+It can be seen that the 2 lists have been updated according to the remove command, the people from the waitlist have moved to the guests list.
+
+Attempting to update (update) records that were previously deleted (remove) based on:
+- name and surname (option 1) Example: The person "ION ALINA-Mihaela" was deleted from the list previously.
+- email (option 2)
+- telephone (option 3)
+
+The application is closed (quit).
